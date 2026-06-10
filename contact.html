@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>聯絡我們 — 王大明教授</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo-block">
+      <div class="logo-icon">NTU</div>
+      <div>
+        <div class="logo-title">王大明 教授</div>
+        <div class="logo-sub">國立臺灣大學 · 資訊管理學系</div>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html">首頁</a>
+      <a href="about.html">個人簡介</a>
+      <a href="research.html">研究領域</a>
+      <a href="publications.html">著作發表</a>
+      <a href="teaching.html">開授課程</a>
+      <a href="contact.html" class="active">聯絡我們</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="選單">&#9776;</button>
+  </div>
+</header>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">首頁</a>
+  <a href="about.html">個人簡介</a>
+  <a href="research.html">研究領域</a>
+  <a href="publications.html">著作發表</a>
+  <a href="teaching.html">開授課程</a>
+  <a href="contact.html">聯絡我們</a>
+</div>
+
+<div class="page-hero">
+  <div class="breadcrumb"><a href="index.html">首頁</a> / 聯絡我們</div>
+  <h1>聯絡我們</h1>
+  <p>歡迎來信詢問研究合作、選課及其他事宜</p>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <div class="contact-info-block">
+        <h3>聯絡資訊</h3>
+        <div class="contact-row">
+          <span class="ci">📍</span>
+          <div>
+            <div class="ck">地址</div>
+            <div class="cv">10617 台北市大安區羅斯福路四段一號<br>管理學院 302 室</div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <span class="ci">📞</span>
+          <div>
+            <div class="ck">電話</div>
+            <div class="cv">(02) 3366-1234</div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <span class="ci">📠</span>
+          <div>
+            <div class="ck">傳真</div>
+            <div class="cv">(02) 3366-5678</div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <span class="ci">✉️</span>
+          <div>
+            <div class="ck">電子郵件</div>
+            <div class="cv">dmwang@ntu.edu.tw</div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <span class="ci">🕐</span>
+          <div>
+            <div class="ck">辦公室時間</div>
+            <div class="cv">週三 14:00 – 16:00<br>（或事先 email 預約）</div>
+          </div>
+        </div>
+
+        <div style="margin-top:2rem; background: var(--bg-light); border-radius:10px; padding:1.5rem; border:1px solid var(--border);">
+          <h4 style="font-size:14px; font-weight:700; color: var(--text-dark); margin-bottom:1rem;">如何前往</h4>
+          <p style="font-size:13.5px; color: var(--text-muted); line-height:1.8; margin-bottom:0.5rem;">
+            🚇 <strong>捷運</strong>：搭乘文湖線至「公館站」，步行約 10 分鐘至管理學院。
+          </p>
+          <p style="font-size:13.5px; color: var(--text-muted); line-height:1.8; margin-bottom:0.5rem;">
+            🚌 <strong>公車</strong>：搭乘 台大正門站，步行穿越校園至管理學院。
+          </p>
+          <p style="font-size:13.5px; color: var(--text-muted); line-height:1.8;">
+            🚗 <strong>開車</strong>：請利用管理學院地下停車場，由舟山路入口進入。
+          </p>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap">
+        <h3>傳送訊息</h3>
+        <div id="contactForm">
+          <div class="form-group">
+            <label for="name">姓名 *</label>
+            <input type="text" id="name" placeholder="請輸入您的姓名">
+          </div>
+          <div class="form-group">
+            <label for="email">電子郵件 *</label>
+            <input type="email" id="email" placeholder="your@email.com">
+          </div>
+          <div class="form-group">
+            <label for="subject">詢問類別</label>
+            <select id="subject">
+              <option value="">請選擇</option>
+              <option value="research">研究合作</option>
+              <option value="student">研究生申請</option>
+              <option value="course">課程相關</option>
+              <option value="media">媒體採訪</option>
+              <option value="other">其他</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">訊息內容 *</label>
+            <textarea id="message" placeholder="請輸入您的問題或訊息..."></textarea>
+          </div>
+          <button class="submit-btn" onclick="handleSubmit()">送出訊息</button>
+        </div>
+        <div id="successMsg" style="display:none; background:#e8f8ef; border:1px solid #5dcaa5; border-radius:8px; padding:1.5rem; color:#0f6e56; text-align:center;">
+          <div style="font-size:28px; margin-bottom:0.5rem;">✅</div>
+          <strong>訊息已送出！</strong><br>
+          <span style="font-size:14px;">我們將於 1–3 個工作天內回覆您的來信。</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="map-placeholder" style="margin-top:3rem;">
+      <div style="font-size:32px; margin-bottom:0.75rem;">🗺️</div>
+      <p style="font-size:15px; font-weight:600; color: var(--text-dark); margin-bottom:0.4rem;">國立臺灣大學 管理學院</p>
+      <p>台北市大安區羅斯福路四段一號</p>
+      <p style="margin-top:0.5rem; font-size:12px; color: var(--text-muted);">部署後可在此嵌入 Google Maps</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-left">
+      <div class="footer-name">王大明 教授</div>
+      <div class="footer-sub">國立臺灣大學 資訊管理學系</div>
+      <div class="footer-sub">管理學院 302室 · dmwang@ntu.edu.tw</div>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">首頁</a>
+      <a href="about.html">個人簡介</a>
+      <a href="research.html">研究領域</a>
+      <a href="publications.html">著作發表</a>
+      <a href="teaching.html">開授課程</a>
+      <a href="contact.html">聯絡我們</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2025 Wang Da-Ming. All rights reserved.</div>
+</footer>
+
+<script>
+  document.getElementById('menuBtn').addEventListener('click', () =>
+    document.getElementById('mobileNav').classList.toggle('open'));
+  function handleSubmit() {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const msg = document.getElementById('message').value;
+    if (!name || !email || !msg) { alert('請填寫必填欄位（姓名、Email、訊息）'); return; }
+    document.getElementById('contactForm').style.display = 'none';
+    document.getElementById('successMsg').style.display = 'block';
+  }
+</script>
+</body>
+</html>
